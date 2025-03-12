@@ -203,5 +203,10 @@ namespace TestControles
         {
 
         }
+
+        private void validateTextBox1_TextBoxChanged_Event(object sender, EventArgs e)
+        {
+            this.Text = "Changed!";
+        }
     }
 }

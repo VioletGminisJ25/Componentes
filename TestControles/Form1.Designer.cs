@@ -35,9 +35,10 @@
             this.comboBoxInterval = new System.Windows.Forms.ComboBox();
             this.FolderBrowser = new System.Windows.Forms.Button();
             this.imageBox = new System.Windows.Forms.PictureBox();
+            this.validateTextBox1 = new NuevosComponentes.ValidateTextBox();
+            this.dibujoAhorcado1 = new NuevosComponentes.DibujoAhorcado();
             this.reproductor1 = new NuevosComponentes.Reproductor();
             this.labelTextBox1 = new NuevosComponentes.LabelTextBox();
-            this.dibujoAhorcado1 = new NuevosComponentes.DibujoAhorcado();
             etiquetaAviso1 = new NuevosComponentes.EtiquetaAviso();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +92,25 @@
             this.imageBox.TabIndex = 8;
             this.imageBox.TabStop = false;
             // 
+            // validateTextBox1
+            // 
+            this.validateTextBox1.Location = new System.Drawing.Point(142, 526);
+            this.validateTextBox1.Multiline = false;
+            this.validateTextBox1.Name = "validateTextBox1";
+            this.validateTextBox1.Size = new System.Drawing.Size(334, 40);
+            this.validateTextBox1.TabIndex = 10;
+            this.validateTextBox1.Texto = "";
+            this.validateTextBox1.Tipo = NuevosComponentes.ValidateTextBox.eTipo.Numerico;
+            this.validateTextBox1.TextBoxChanged_Event += new System.EventHandler(this.validateTextBox1_TextBoxChanged_Event);
+            // 
+            // dibujoAhorcado1
+            // 
+            this.dibujoAhorcado1.Errores = 1;
+            this.dibujoAhorcado1.Location = new System.Drawing.Point(355, 118);
+            this.dibujoAhorcado1.Name = "dibujoAhorcado1";
+            this.dibujoAhorcado1.Size = new System.Drawing.Size(192, 317);
+            this.dibujoAhorcado1.TabIndex = 9;
+            // 
             // reproductor1
             // 
             this.reproductor1.Location = new System.Drawing.Point(763, 161);
@@ -136,19 +156,12 @@
             this.labelTextBox1.TxtChanged += new System.EventHandler(this.labelTextBox1_TxtChanged);
             this.labelTextBox1.Load += new System.EventHandler(this.labelTextBox1_Load);
             // 
-            // dibujoAhorcado1
-            // 
-            this.dibujoAhorcado1.Errores = 1;
-            this.dibujoAhorcado1.Location = new System.Drawing.Point(355, 118);
-            this.dibujoAhorcado1.Name = "dibujoAhorcado1";
-            this.dibujoAhorcado1.Size = new System.Drawing.Size(192, 317);
-            this.dibujoAhorcado1.TabIndex = 9;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1088, 450);
+            this.ClientSize = new System.Drawing.Size(1088, 746);
+            this.Controls.Add(this.validateTextBox1);
             this.Controls.Add(this.dibujoAhorcado1);
             this.Controls.Add(this.imageBox);
             this.Controls.Add(this.FolderBrowser);
@@ -176,6 +189,7 @@
         private System.Windows.Forms.Button FolderBrowser;
         private System.Windows.Forms.PictureBox imageBox;
         private NuevosComponentes.DibujoAhorcado dibujoAhorcado1;
+        private NuevosComponentes.ValidateTextBox validateTextBox1;
     }
 }
 

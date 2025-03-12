@@ -72,6 +72,12 @@
     <Compile Include="DibujoAhorcado.Designer.cs">
       <DependentUpon>DibujoAhorcado.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidateTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ValidateTextBox.Designer.cs">
+      <DependentUpon>ValidateTextBox.cs</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reproductor.resx">
       <DependentUpon>Reproductor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidateTextBox.resx">
+      <DependentUpon>ValidateTextBox.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
